@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Academy</title>
+
+    <!--<link rel="icon" href="./favicons/favicon-16x16.png">-->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script defer src="../script/login.js"></script>
+    <script defer src="../script/validation.js"></script>
+
+</head>
+<body>
+    <main>
+        <form action="" class="login">
+
+            <div class="email">
+                <p class="lblemail">Email</p>
+                <input type="email" name="email" id="inp_email" onchange="onChangeEmail()">
+                <div id="erro_email_1" class="erro" >Email é obrigatório</div>
+                <div id="erro_email_2" class="erro" >Email é inválido</div>
+            </div>
+            
+            <div class="senha">
+
+                <p class="lblsenha">Senha</p>
+                <input type="password" name="senha" id="inp_senha" onchange="onChangePassword()">
+                <div id="erro_senha" class="erro">Senha é obrigatória</div>
+
+            </div>
+
+            <div class="botoes">
+
+                <button id="bt_recover" disabled="true" >Recuperar</button>
+                <button id="bt_login" onclick="doLogin(event)" disabled="true" >Entrar</button>
+                <button id="bt_registro" disabled="true" >Registrar</button>
+
+            </div>
+        <form>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-auth-compat.js"></script>
+    <script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyDPWObYjlOPtGYOHqyQDElbIuRnyLU84w0",
+        authDomain: "finance-academy-fa7d4.firebaseapp.com",
+        projectId: "finance-academy-fa7d4",
+        storageBucket: "finance-academy-fa7d4.firebasestorage.app",
+        messagingSenderId: "248922897023",
+        appId: "1:248922897023:web:d8b06b0608d0fda1219d4a",
+        measurementId: "G-TGSL97LT1S"
+  };
+  firebase.initializeApp(firebaseConfig);
+
+    </script>
+</body>
+</html>

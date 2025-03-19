@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Academy Registro</title>
+
+    <!--<link rel="icon" href="./favicons/favicon-16x16.png">-->
+    <link rel="stylesheet" href="../css/style.css"> <!--ARRUMAR CSS-->
+
+    <script defer src="../script/login.js"></script> <!--ARRUMAR SCRIPT-->
+
+</head>
+<body>
+    <main>
+        <form action="" class="login">
+
+            <div class="email">
+                <p class="lblemail">Email</p>
+                <input type="email" name="email" id="inp_email" onchange="onChangeEmail()">
+                <div id="erro_email_1" class="erro" >Email é obrigatório</div>
+                <div id="erro_email_2" class="erro" >Email é inválido</div>
+            </div>
+            
+            <div class="senha">
+
+                <p class="lblsenha">Senha</p>
+                <input type="password" name="senha" id="inp_senha" onchange="onChangePassword()">
+                <div id="erro_senha" class="erro">Senha é obrigatória</div>
+
+            </div>
+
+            <div class="botoes">
+
+                <button id="bt_recover" disabled="true" >Recuperar</button>
+                <button id="bt_login" disabled="true" >Entrar</button>
+                <button id="bt_registro" disabled="true" >Registrar</button>
+
+            </div>
+        <form>
+    </main>
+</body>
+</html>
