@@ -1,19 +1,213 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finance Academy</title>
-
-    <!--<link rel="icon" href="./favicons/favicon-16x16.png">-->
-    
-    <link rel="stylesheet" href="../css/style.css"> <!--ARRUMAR CSS-->
-
-    <script defer src="../script/script.js"></script> <!--ARRUMAR SCRIPT-->
-</head>
-<body>
-    <main>
-        <h1>home</h1>
-    </main>
-</body>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Finance Academy
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Inter', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+   <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="flex items-center">
+     <img alt="Duolingo logo, a green owl with big eyes" class="mx-auto mb-4 w-20 h-20" src="../img/money-bag-svgrepo-com.png"/>
+     <span class="ml-3 text-xl font-bold text-gray-800">
+      Finance Academy
+     </span>
+    </div>
+    <div class="hidden md:flex space-x-6">
+     <a class="text-gray-600 hover:text-gray-800" href="#">
+      Início
+     </a>
+     <a class="text-gray-600 hover:text-gray-800" href="#">
+      Cursos
+     </a>
+     <a href="source/login.html" class="text-gray-600 hover:text-gray-800" href="#">
+      Entrar
+     </a>
+     <a href="source/register.html" class="text-gray-600 hover:text-gray-800" href="#">
+      Registrar
+     </a>
+    </div>
+    <div class="hidden md:flex items-center space-x-4">
+     <a class="text-gray-600 hover:text-gray-800" href="#">
+      <i class="fas fa-user">
+      </i>
+     </a>
+     <a class="text-gray-600 hover:text-gray-800" href="#">
+      <i class="fas fa-cog">
+      </i>
+     </a>
+    </div>
+    <div class="md:hidden">
+     <button class="text-gray-600 hover:text-gray-800 focus:outline-none">
+      <i class="fas fa-bars">
+      </i>
+     </button>
+    </div>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="bg-white py-20">
+   <div class="container mx-auto px-4 text-center">
+    <h1 class="text-4xl md:text-6xl font-bold text-gray-800">
+        Educação financeira gratuita. Para toda a vida
+    </h1>
+    <p class="mt-4 text-gray-600">
+        Finance Academy torna o aprendizado financeiro fácil e divertido, com lições rápidas e gratuitas.
+    </p>
+    <button class="mt-8 px-6 py-3 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600">
+     COMECE AGORA
+    </button>
+   </div>
+  </section>
+  <!-- Features Section -->
+  <section class="bg-gray-100 py-20">
+   <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <div class="bg-white p-6 rounded-lg shadow-md text-center">
+      <img alt="Icon representing fun and engaging lessons" class="mx-auto mb-4 w-20 h-20 rounded-full" src="../img/Diversão.png"/>
+      <h2 class="text-xl font-semibold text-gray-800">
+        Divertido e envolvente
+      </h2>
+      <p class="mt-2 text-gray-600">
+        Aulas interativas que o mantêm motivado e envolvido.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md text-center">
+      <img alt="Icon representing personalized learning" class="mx-auto mb-4 w-20 h-20 rounded-full" src="../img/Ensino.png"/>
+      <h2 class="text-xl font-semibold text-gray-800">
+        Aprendizado personalizado
+      </h2>
+      <p class="mt-2 text-gray-600">
+        Aulas adaptadas ao seu estilo e ritmo de aprendizado.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md text-center">
+      <img alt="Icon representing a wide variety of languages" class="mx-auto mb-4 w-20 h-20 rounded-full" src="../img/Globo.png"/>
+      <h2 class="text-xl font-semibold text-gray-800">
+        Diversos conceitos financeiros
+      </h2>
+      <p class="mt-2 text-gray-600">
+        Domine tópicos financeiros usados globalmente.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Courses Section -->
+  <section class="bg-white py-20">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-gray-800 text-center">
+     Cursos populares
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+     <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+        <img alt="Image representing French language course" class="mx-auto mb-4 w-64 h-64"  src="../img/Investir.png"/>
+      <h3 class="text-xl font-semibold text-gray-800">
+        Investimentos para Iniciantes
+      </h3>
+      <p class="mt-2 text-gray-600">
+        Descubra como investir em ações, fundos imobiliários e renda fixa de forma segura e estratégica.
+      </p>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+        <img alt="Image representing French language course" class="mx-auto mb-4 w-64 h-64"  src="../img/Divida.png"/>
+      <h3 class="text-xl font-semibold text-gray-800">
+        Como Sair das Dívidas
+      </h3>
+      <p class="mt-2 text-gray-600">
+        Estratégias eficazes para quitar dívidas, negociar juros e recuperar sua estabilidade financeira.
+      </p>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+        <img alt="Image representing French language course" class="mx-auto mb-4 w-64 h-64 rounded-2x1"  src="../img/Cripto.png"/>
+      <h3 class="text-xl font-semibold text-gray-800">
+        Criptomoedas e Blockchain
+      </h3>
+      <p class="mt-2 text-gray-600">
+        Conheça o mundo das criptomoedas e aprenda a investir com segurança.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Testimonials Section -->
+  <section class="bg-gray-100 py-20">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-gray-800 text-center">
+        O que nossos usuários dizem
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+     <div class="bg-white p-6 rounded-lg shadow-md text-center">
+      <img alt="User profile picture of a smiling woman" class="mx-auto mb-4 w-20 h-20 rounded-full" src="../img/Gabriel.jpeg"/>
+      <p class="text-gray-600">
+       "Finance Academy me ajudou a entender como investir meu dinheiro de forma inteligente. Agora me sinto mais seguro com minhas finanças!"
+      </p>
+      <h3 class="mt-4 text-xl font-semibold text-gray-800">
+       Gabriel Diniz
+      </h3>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md text-center">
+      <img alt="User profile picture of a smiling man" class="mx-auto mb-4 w-20 h-20 rounded-full" src="../img/Diana.jpeg"/>
+      <p class="text-gray-600">
+       "Sempre tive dificuldade para economizar, mas com as lições curtas e práticas, finalmente consegui criar um planejamento financeiro eficiente."
+      </p>
+      <h3 class="mt-4 text-xl font-semibold text-gray-800">
+       Diana Melusi
+      </h3>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md text-center">
+      <img alt="User profile picture of a smiling woman with glasses" class="mx-auto mb-4 w-20 h-20 rounded-full" src="../img/Robert.jpeg"/>
+      <p class="text-gray-600">
+       "Aprender sobre dinheiro nunca foi tão fácil e divertido! Recomendo Finance Academy para qualquer pessoa que queira melhorar sua vida financeira!"
+      </p>
+      <h3 class="mt-4 text-xl font-semibold text-gray-800">
+       Robert Donato
+      </h3>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-white py-8">
+   <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+     <div class="flex items-center mb-4 md:mb-0">
+      <img alt="Duolingo logo, a green owl with big eyes" class="h-20 w-20" src="../img/Logo.png"/>
+      <span class="ml-3 text-xl font-bold text-gray-800">
+       FinanceAcademy
+      </span>
+     </div>
+     <div class="flex space-x-6">
+      <a class="text-gray-600 hover:text-gray-800" href="#">
+       Início
+      </a>
+      <a class="text-gray-600 hover:text-gray-800" href="#">
+       Cursos
+      </a>
+      <a class="text-gray-600 hover:text-gray-800" href="#">
+       Sobre
+      </a>
+      <a class="text-gray-600 hover:text-gray-800" href="#">
+       Contato
+      </a>
+     </div>
+    </div>
+    <div class="mt-4 text-center text-gray-600">
+     © 2025 FinanceAcademy. Todos os direitos reservados.
+    </div>
+   </div>
+  </footer>
+ </body>
 </html>
