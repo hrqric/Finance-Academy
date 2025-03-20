@@ -126,3 +126,10 @@ nav a {
     font-size: 14px;
     color: #555;
 }
+
+nav .btn {
+    background: #0056b3;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
