@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.left-section {
+    background: #034efc;
+    color: white;
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+}
+.left-section img {
+    width: 80%;
+    max-width: 300px;
+}
+.right-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.role-selection button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background: #e0e0e0;
+    border-radius: 5px;
+}
+.role-selection{
+    margin-bottom: 3%;
+    margin-top: 1%;
+}
+.role-selection .active {
+    background: #034efc;
+    color: white;
+}
+.date-inputs select {
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+a {
+    color: #034efc;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+#confirm_button{
+    width: 45%;
+    margin: 5px;
+    margin-top: 3%;
+    background: #0056b3;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+#lbl_role-selection{
+    margin-top: 1%;
+}
+#lbl_datadenascimento{
+    margin-bottom: 1%;
+}

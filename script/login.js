@@ -42,14 +42,6 @@ function isPasswordValid(){
     return true;
 }
 
-function validateEmail(email){
-    if(email){
-        return /\S+@\S+\.\S+/.test(email);
-    } else {
-        return true
-    }
-}
-
 function toggleEmailErrors(){
     const email = inputs.email().value;
     const invalid_email = inputs.invalid_email();
@@ -101,6 +93,10 @@ function getErrorMessage(error) {
         return "Usuário não encontrado"
     }
     return error.message;
+}
+
+function register() {
+    window.location.href = '../source/register.html'
 }
 
 const inputs = {

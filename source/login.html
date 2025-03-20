@@ -1,60 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finance Academy</title>
-
-    <!--<link rel="icon" href="./favicons/favicon-16x16.png">-->
-    <link rel="stylesheet" href="../css/style.css">
-
-    <script defer src="../script/login.js"></script>
-    <script defer src="../script/validation.js"></script>
-
+    <title>Financial Academy - Login</title>
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-    <main>
-        <form action="" class="login">
-
-            <div class="email">
-                <p class="lblemail">Email</p>
-                <input type="email" name="email" id="inp_email" onchange="onChangeEmail()">
-                <div id="erro_email_1" class="erro" >Email é obrigatório</div>
-                <div id="erro_email_2" class="erro" >Email é inválido</div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo" alt="Financial Academy">
+                <span>Financial Academy</span>
             </div>
-            
-            <div class="senha">
-
-                <p class="lblsenha">Senha</p>
-                <input type="password" name="senha" id="inp_senha" onchange="onChangePassword()">
-                <div id="erro_senha" class="erro">Senha é obrigatória</div>
-
+            <div class="nav-links">
+                <a href="#">Explorar ▼</a>
+                <input type="text" placeholder="Pesquisar">
+                <a href="#">Entrar</a>
+                <button class="btn">Cadastrar-se</button>
             </div>
+        </nav>
+    </header>
 
-            <div class="botoes">
+    <main class="container">
+        <section class="illustration">
+            <img src="../img/cadastro.png" alt="Investimento">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
 
-                <button id="bt_recover" disabled="true" >Recuperar</button>
-                <button id="bt_login" onclick="doLogin(event)" disabled="true" >Entrar</button>
-                <button id="bt_registro" disabled="true" >Registrar</button>
+        <section class="login-form">
+            <h2>Entrar</h2>
+            <p class="required">* campo obrigatório.</p>
+            <form>
+                <label for="email">E-mail ou nome de usuário *</label>
+                <input type="text" id="email" required>
 
-            </div>
-        <form>
+                <label for="password">Senha *</label>
+                <input type="password" id="password" required>
+
+                <a href="#" class="forgot-password">Esqueceu sua senha?</a>
+
+                <button type="submit" class="btn">Entrar</button>
+
+                <p class="signup">Precisa de uma conta do Financial Academy? <a href="register.html">Criar uma conta</a></p>
+            </form>
+        </section>
     </main>
-
-    <script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-auth-compat.js"></script>
-    <script>
-    const firebaseConfig = {
-        apiKey: "AIzaSyDPWObYjlOPtGYOHqyQDElbIuRnyLU84w0",
-        authDomain: "finance-academy-fa7d4.firebaseapp.com",
-        projectId: "finance-academy-fa7d4",
-        storageBucket: "finance-academy-fa7d4.firebasestorage.app",
-        messagingSenderId: "248922897023",
-        appId: "1:248922897023:web:d8b06b0608d0fda1219d4a",
-        measurementId: "G-TGSL97LT1S"
-  };
-  firebase.initializeApp(firebaseConfig);
-
-    </script>
 </body>
 </html>
