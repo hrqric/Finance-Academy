@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Academy - Login</title>
+    
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script defer src="../script/navigate.js"></script>
+    <script defer src="../script/login.js"></script>
+
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="../img/money-bag-svgrepo-com.png" alt="Financial Academy">
-                <span>Financial Academy</span>
+                <i class="fas fa-money-bill-wave"></i> 
+                <span> Finance Academy</span>
             </div>
             <div class="nav-links">
-                <a href="#">Explorar ▼</a>
                 <input type="text" placeholder="Pesquisar">
-                <a href="#">Entrar</a>
-                <button class="btn">Cadastrar-se</button>
+                <button class="btn" id="btn_login" onclick="windowNavigate(1)">Entrar</button>
+                <button class="btn" onclick="windowNavigate(2)">Cadastrar-se</button>
             </div>
         </nav>
     </header>
@@ -41,11 +46,30 @@
 
                 <a href="#" class="forgot-password">Esqueceu sua senha?</a>
 
-                <button type="submit" class="btn">Entrar</button>
+                <button type="submit" class="btn" onclick="doLoginWithEmail(event)">Entrar</button>
 
                 <p class="signup">Precisa de uma conta do Financial Academy? <a href="register.html">Criar uma conta</a></p>
             </form>
         </section>
     </main>
+
+<script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-auth-compat.js"></script>
+
+<script>
+
+    const firebaseConfig = {
+            apiKey: "AIzaSyDPWObYjlOPtGYOHqyQDElbIuRnyLU84w0",
+            authDomain: "finance-academy-fa7d4.firebaseapp.com",
+            projectId: "finance-academy-fa7d4",
+            storageBucket: "finance-academy-fa7d4.firebasestorage.app",
+            messagingSenderId: "248922897023",
+            appId: "1:248922897023:web:d8b06b0608d0fda1219d4a",
+            measurementId: "G-TGSL97LT1S"
+    };
+    firebase.initializeApp(firebaseConfig);
+
+</script>
+
 </body>
 </html>
